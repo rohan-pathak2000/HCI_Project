@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'log.css' %}">
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Log In</button> 
+          <button type="button" class="toggle-btn" onclick="register()">Register</button> 
+        </div>
+        <div class="social-icons">
+        <img src="{% static 'fb.png' %}">
+        <img src="{% static 'gp.png' %}">
+        <img src="{% static 'tw.png' %}">
+
+      </div>
+      <div>
+        {% for message in messages %}
+          <div>
+            {{ message }}
+          </div>
+        {% endfor %}
+      </div>
+      <form id="login" method="POST" action="login" class="input-group">
+        {% csrf_token %}
+        <input type="text" class="input-field" name="userid" placeholder="User Id"required>
+        <input type="password" class="input-field" name="pwd" placeholder="Enter Password"required>
+        <input type="checkbox" class="check-box"><span>Remember Me</span>
+        <button type="submit" class="submit-btn">Login</button>
+
+      </form>
+      <form id="register" action="register" method="POST" class="input-group">
+        {% csrf_token %}
+        <input type="email" class="input-field" name="email" placeholder="Email Id"required>
+        <input type="text" class="input-field" name="userid" placeholder="User Id"required>
+        <input type="password" class="input-field" name="pwd" placeholder="Enter Password"required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="{% static 'login.js' %}"></script>
+
+  </body>
+</html>

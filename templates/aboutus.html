@@ -1,0 +1,294 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'fontawesome-free-5.15.2-web/css/all.css' %} ">
+    <link rel="stylesheet" href="{% static 'CSS-main/style.css' %}">
+    <title>About Us</title>
+  </head>
+  <body>
+   <header>
+    <div id="bottomHeader">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md" style="background-color:#3c40c6;">
+          <a class="navbar-brand" href="">
+            <img src="{% static 'images/logo.png' %}" width="60px" height="60px" alt="logo">
+          </a>
+          <button data-toggle="collapse" data-target="#navbarToggler" type="button" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Services</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="plumbing.html">Plumbing Works</a>
+                    <a class="dropdown-item" href="wastecollection.html">Waste Collection</a>
+                    <a class="dropdown-item" href="sanitation.html">Sanitation Works</a>
+                    <a class="dropdown-item" href="employment.html">Employment Opportunities</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+   </header>
+   <section class="breadcrumbs-section">
+    <div class="container p-1 p-sm-3">
+      <div class="row">
+        <div class="col-12">
+          <h2>About Us</h2>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="home">Home</a></li>
+            <li class="breadcrumb-item active">About Us</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="about-company-section">
+    <div class="container p-1 p-sm-3">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>About Municipal VIT</h2>
+          <hr />
+        </div>
+
+        <div class="col-md-3">
+          <img class="img-fluid" src="{% static 'images/logo-v1.png' %}" alt="">
+
+        </div>
+
+        <div class="col-md-9">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe odio molestias. Voluptates
+            officiis minima amet modi, perspiciatis impedit reiciendis doloremque, placeat laborum iste eaque autem
+            assumenda, consectetur odit quidem!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe odio molestias. Voluptates
+            officiis minima amet modi, perspiciatis impedit reiciendis doloremque, placeat laborum iste eaque autem
+            assumenda, consectetur odit quidem!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe odio molestias. Voluptates
+            officiis minima amet modi, perspiciatis impedit reiciendis doloremque, placeat laborum iste eaque autem
+            assumenda, consectetur odit quidem!
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START : Home page 5rd section - Newsletter section -->
+  <section class="home-newsletter p-2 pt-md-2 pb-md-2">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3>
+          Subscribe to our Newsletter
+        </h3>
+        <div class="input-group p-3">
+          <input type="email" class="form-control" placeholder="Enter your email">
+          <span class="input-group-btn">
+            <button class="btn btn-theme" type="submit">Subscribe</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END : Home page 5th section - Newsletter section -->
+
+
+  <!-- START :  Home page 6th section - Our services -->
+  <section class="pt-3 pb-4">
+      <div class="container">
+          <div class="row mt-4">
+            <div class="col text-center">
+              <h3>
+                Our awesome team
+              </h3>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid qualities-img p-4" width="300px" height="300px" src="{% static 'images/CEO.png' %}">
+              <h5>
+                CEO
+              </h5>
+              <p>
+                <i>- ABC</i>
+              </p>
+
+            </div>
+            <div class="col-md-4 text-center">
+              <img class="img-fluid qualities-img p-4" width="300px" height="300px" src="{% static 'images/senior-manager.png' %}">
+              <h5>
+                Senior Business Manager
+              </h5>
+              <p>
+                <i>- EFG</i>
+              </p>
+
+            </div>
+            <div class="col-md-4 text-center">
+
+                <img class="img-fluid qualities-img p-4" width="300px" height="300px" src="{% static 'images/hr.png' %}">
+                <h5>
+                  Senior HR
+                </h5>
+                <p>
+                  <i>- XYZ</i>
+                </p>
+            </div>
+          </div>
+
+          <div class="row mb-md-3">
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-4" width="300px" height="300px" src="{% static 'images/developer.png' %}">
+                <h5>
+                  Web Developer
+                </h5>
+                <p>
+                  <i>- PQR</i>
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-4" width="300px" height="300px" src="{% static 'images/sales-head.png' %}">
+                <h5>
+                  Sales Head
+                </h5>
+                <p>
+                  <i>- MNO</i>
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img class="img-fluid qualities-img p-4" width="300px" height="300px" src="{% static 'images/marketing-head.png' %}">
+                <h5>
+                  Marketing Head
+                </h5>
+                <p>
+                  <i>- KLM</i>
+                </p>
+            </div>
+          </div>
+  </section>
+  <!-- END : Home page 6th section - Our services -->
+
+<!-- START :  Home page 7th section - clients -->
+<section class="pt-3 pb-4 clients-section">
+    <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h3>
+                Some of our trusted clients.
+            </h3>
+          </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-2 col-6">
+              <img class="img-fluid feature-img p-2" src="{% static 'images/apple.png' %}" alt="Apple">
+            </div>
+            <div class="col-md-2 col-6">
+              <img class="img-fluid feature-img p-2" src="{% static 'images/google.png' %}" alt="Google">
+            </div>
+            <div class="col-md-2 col-6">
+              <img class="img-fluid feature-img p-2" src="{% static 'images/infosys.png' %}" alt="Infosys">
+            </div>
+            <div class="col-md-2 col-6">
+              <img class="img-fluid feature-img p-2" src="{% static 'images/lnt.png' %}" alt="Larsen&Tubro">
+            </div>
+            <div class="col-md-2 col-6">
+              <img class="img-fluid feature-img p-2" src="{% static 'images/netflix.png' %}" alt="Netflix">
+            </div>
+            <div class="col-md-2 col-6">
+              <img class="img-fluid feature-img p-2" src="{% static 'images/yahoo.png' %}" alt="Yahoo">
+            </div>
+          </div>
+
+
+
+  </section>
+  <!-- END : Home page 7th section - clients -->
+   <!-- Footer section -->
+   <footer class="full-footer">
+    <div class="container top-footer p-md-3 p-1">
+      <div class="row">
+        <div class="col-md-3 pl-4 pr-4">
+          <img class="img-fluid" src="{% static 'imgs/logo_text_white_small.png' %}" alt="">
+          <p>
+            Municipal VIT is an organisation to promote sanitation in the society and can be used by anyone and everyone ...<a href="#">Read
+              more...</a>
+          </p>
+          <a style="color:silver;" class="p-1" href="#"><i class="fab fa-2x fa-facebook-square"></i></a>
+          <a style="color: silver;" class="p-1" href="#"><i class="fab fa-2x fa-google-plus-square"></i></a>
+          <a style="color: silver;" class="p-1" href="#"><i class="fab fa-2x fa-twitter-square"></i></a>
+          <a style="color: silver;" class="p-1" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+        </div>
+
+        <div class="col-md-3  pl-4 pr-4">
+          <h3>Important Links</h3>
+          <a href="#">Privacy Policy</a><br>
+          <a href="#">Youtube Channel Link </a><br>
+          <a href="#">Blog Articles </a><br>
+          <a href="#">Social Media</a>
+        </div>
+
+        <div class="col-md-3  pl-4 pr-4">
+          <h3>Our Services</h3>
+          <a href="plumbing.html">Plumbing Works</a><br>
+          <a href="wastecollection.html">Waste Collection  </a><br>
+          <a href="sanitation.html">Sanitation Works</a><br>
+          <a href="employment.html">Employment Opportunities</a>
+        </div>
+
+      <div class="col-md-3  pl-4 pr-4">
+          <h3>Contact Us</h3>
+          <a href="#"><i class="fas fa-phone"></i> +(91) 9090909090  </a><br>
+          <a href="#"><i class="fas fa-envelope"></i> inquiry@municipalvit.com  </a><br>
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.64333236168!2d72.74110193617271!3d19.082522317332813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1547151374329" frameborder="0"></iframe>
+          </div>
+
+      </div>
+    </div>
+    </div>
+    <div class="container-fluid bottom-footer pt-2">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>Copyrights © 2021 - All rights reserved</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
